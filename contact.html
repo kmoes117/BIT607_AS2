@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<header>
+  <h1 class="site-title">Snazzy Paws Grooming</h1>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+    <section aria-label="Contact Information" style="text-align: center;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d604805.6746925895!2d167.9!3d-47!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa82c0197b050ae25%3A0x500ef868479d930!2sStewart%20Island!5e0!3m2!1sen!2snz!4v1721550000000!5m2!1sen!2snz"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need further information, please reach out to us.</p>
+    <form class="contact-form" aria-label="Contact Form">
+      <fieldset>
+        <legend>Send us a message</legend>
+        <div class="form-fields">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone">
+
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" rows="4"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </fieldset>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>Opening Hours: Mon - Fri 9AM - 5PM</p>
+</footer>
+</body>
+</html>

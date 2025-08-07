@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<header>
+  <h1 class="site-title">Snazzy Paws Grooming</h1>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html" class="active">Booking</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section aria-label="Booking Form">
+    <h2>Book Your Grooming Appointment</h2>
+    <p>Please fill out the form below to schedule an appointment for your pet.</p>
+    <form class="contact-form" aria-label="Booking Form">
+      <fieldset>
+        <legend>Book Now</legend>
+        <div class="form-fields">
+          <label for="owner-name">Owner’s Name:</label>
+          <input type="text" id="owner-name" name="owner-name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="dog-name">Dog’s Name:</label>
+          <input type="text" id="dog-name" name="dog-name" required>
+
+          <label for="breed">Breed:</label>
+          <input type="text" id="breed" name="breed">
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="0">
+        </div>
+        <button type="submit">Book Now</button>
+      </fieldset>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>Opening Hours: Mon - Fri 9AM - 5PM</p>
+</footer>
+</body>
+</html>
