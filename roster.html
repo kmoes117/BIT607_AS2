@@ -1,0 +1,62 @@
+<!-- User is 'Steve' and the password is 'thisisapassword123' -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Staff roster information page for Snazzy Paws Grooming.">
+    <title>Staff Roster - Snazzy Paws Grooming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Snazzy Paws Grooming</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Main content starts -->
+    <main class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h1 class="mt-4">Staff Roster</h1>
+          <!-- Staff table starts -->
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Shift</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Steve</td><td>Manager</td><td>Mon-Fri</td></tr>
+              <tr><td>Bob</td><td>Staff</td><td>Tue-Sat</td></tr>
+              <tr><td>Alice</td><td>Staff</td><td>Mon-Fri</td></tr>
+              <tr><td>Janet</td><td>Staff</td><td>Wed-Sat</td></tr>
+            </tbody>
+          </table>
+          <!-- Staff table ends -->
+        </div>
+      </div>
+    </main>
+    <!-- Footer starts -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <p>Opening Hours: Mon - Fri 9AM - 5PM</p>
+    </footer>
+  </body>
+</html>
