@@ -1,0 +1,8 @@
+AuthType Basic
+AuthName "Protected Area"
+AuthUserFile "C:/Users/kiera/Desktop/Study/BIT607/Assessment 3/BIT607_AS3_Code/.htpasswd"
+Require valid-user
+
+<Files "roster.html">
+    Require valid-user
+</Files>
