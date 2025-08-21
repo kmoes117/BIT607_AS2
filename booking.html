@@ -1,56 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Book your pet's grooming appointment at Snazzy Paws.">
     <title>Booking - Snazzy Paws Grooming</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
-<header>
-  <h1 class="site-title">Snazzy Paws Grooming</h1>
-  <nav aria-label="Main navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="booking.html" class="active">Booking</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <section aria-label="Booking Form">
-    <h2>Book Your Grooming Appointment</h2>
-    <p>Please fill out the form below to schedule an appointment for your pet.</p>
-    <form class="contact-form" aria-label="Booking Form">
-      <fieldset>
-        <legend>Book Now</legend>
-        <div class="form-fields">
-          <label for="owner-name">Owner’s Name:</label>
-          <input type="text" id="owner-name" name="owner-name" required>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="dog-name">Dog’s Name:</label>
-          <input type="text" id="dog-name" name="dog-name" required>
-
-          <label for="breed">Breed:</label>
-          <input type="text" id="breed" name="breed">
-
-          <label for="age">Age:</label>
-          <input type="number" id="age" name="age" min="0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Snazzy Paws Grooming</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link active" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
+            <li class="nav-item"><a class="nav-link" href="roster.html">Roster</a></li>
+          </ul>
         </div>
-        <button type="submit">Book Now</button>
-      </fieldset>
-    </form>
-  </section>
-</main>
-
-<footer>
-  <p>Opening Hours: Mon - Fri 9AM - 5PM</p>
-</footer>
-</body>
+      </div>
+    </nav>
+    <!-- Main content starts -->
+    <main class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <section aria-label="Booking Form">
+            <h2>Book Your Grooming Appointment</h2>
+            <p>Please fill out the form below to schedule an appointment for your pet.</p>
+            <!-- Booking form starts here -->
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="owner-name" class="form-label">Owner’s Name</label>
+                <input type="text" class="form-control" id="owner-name" name="owner-name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="col-md-6">
+                <label for="dog-name" class="form-label">Dog’s Name</label>
+                <input type="text" class="form-control" id="dog-name" name="dog-name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="breed" class="form-label">Breed</label>
+                <input type="text" class="form-control" id="breed" name="breed">
+              </div>
+              <div class="col-md-6">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" class="form-control" id="age" name="age" min="0">
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary mt-3">Book Now</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!-- Footer starts -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <p>Opening Hours: Mon - Fri 9AM - 5PM</p>
+    </footer>
+  </body>
 </html>

@@ -1,115 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Our grooming services and prices at Snazzy Paws.">
     <title>Services - Snazzy Paws Grooming</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
-<header>
-  <h1 class="site-title">Snazzy Paws Grooming</h1>
-    <nav aria-label="Main navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Snazzy Paws Grooming</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
+            <li class="nav-item"><a class="nav-link" href="roster.html">Roster</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-</header>
-
-<main>
-    <section aria-label="Services List">
-        <h2>Our Services</h2>
-        <p>See our services and prices below.</p>
-        <table>
-            <thead>
+    <!-- Main content starts -->
+    <main class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <section aria-label="Services List">
+            <h2 class="mb-3">Our Services</h2>
+            <p>See our services and prices below.</p>
+            <!-- Services table starts -->
+            <table class="table table-striped table-bordered">
+              <thead class="table-dark">
                 <tr>
-                    <th scope="col">Service</th>
-                    <th scope="col">Price</th>
-                    <th scope="col">Description</th>
+                  <th scope="col">Service</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Description</th>
                 </tr>
-            </thead>
-            <tbody>
+              </thead>
+              <tbody>
+                <!-- Service rows unchanged -->
                 <tr>
-                    <td>Bath and Brush</td>
-                    <td>$25 - $50</td>
-                    <td>Includes shampoo, blow-dry, brush-out and nail trim.</td>
-                </tr>
-                <tr>
-                    <td>Haircut</td>
-                    <td>$45 - $85</td>
-                    <td>Bath, blow-dry, haircut (breed standard or owner's preference) and nail trim.</td>
+                  <td>Bath and Brush</td>
+                  <td>$25 - $50</td>
+                  <td>Includes shampoo, blow-dry, brush-out and nail trim.</td>
                 </tr>
                 <tr>
-                    <td>Nail Trim</td>
-                    <td>$10 - $20</td>
-                    <td>Trim nails and, in some cases, filing.</td>
+                  <td>Haircut</td>
+                  <td>$45 - $85</td>
+                  <td>Bath, blow-dry, haircut (breed standard or owner's preference) and nail trim.</td>
                 </tr>
                 <tr>
-                    <td>Ear Cleaning</td>
-                    <td>$10 - $15</td>
-                    <td>Gentle cleaning of ears to remove wax and debris.</td>
+                  <td>Nail Trim</td>
+                  <td>$10 - $20</td>
+                  <td>Trim nails and, in some cases, filing.</td>
                 </tr>
                 <tr>
-                    <td>Teeth Brushing</td>
-                    <td>$10 - $15</td>
-                    <td>Brushing with pet-safe toothpaste.</td>
+                  <td>Ear Cleaning</td>
+                  <td>$10 - $15</td>
+                  <td>Gentle cleaning of ears to remove wax and debris.</td>
                 </tr>
                 <tr>
-                    <td>De-shedding Treatment</td>
-                    <td>$20 - $40</td>
-                    <td>Special shampoo and undercoat removal.</td>
+                  <td>Teeth Brushing</td>
+                  <td>$10 - $15</td>
+                  <td>Brushing with pet-safe toothpaste.</td>
                 </tr>
                 <tr>
-                    <td>Flea and Tick Treatment</td>
-                    <td>$15 - $30</td>
-                    <td>Shampoo and preventative treatment.</td>
+                  <td>De-shedding Treatment</td>
+                  <td>$20 - $40</td>
+                  <td>Special shampoo and undercoat removal.</td>
                 </tr>
                 <tr>
-                    <td>Spa Package</td>
-                    <td>$75 - $150</td>
-                    <td>Bath, haircut, teeth brushing, nail trim and special scents or conditioners.</td>
+                  <td>Flea and Tick Treatment</td>
+                  <td>$15 - $30</td>
+                  <td>Shampoo and preventative treatment.</td>
                 </tr>
                 <tr>
-                    <td>Express Service</td>
-                    <td>$15 - $25</td>
-                    <td>Minimal grooming or a quick touch-up.</td>
+                  <td>Spa Package</td>
+                  <td>$75 - $150</td>
+                  <td>Bath, haircut, teeth brushing, nail trim and special scents or conditioners.</td>
                 </tr>
                 <tr>
-                    <td>Medicated Bath</td>
-                    <td>$20 - $40</td>
-                    <td>Special shampoo for skin conditions.</td>
+                  <td>Express Service</td>
+                  <td>$15 - $25</td>
+                  <td>Minimal grooming or a quick touch-up.</td>
                 </tr>
                 <tr>
-                    <td>Special-breed Cuts</td>
-                    <td>Varies</td>
-                    <td>Breed-specific cuts or styling (quoted after consultation).</td>
+                  <td>Medicated Bath</td>
+                  <td>$20 - $40</td>
+                  <td>Special shampoo for skin conditions.</td>
                 </tr>
                 <tr>
-                    <td>Puppy Package</td>
-                    <td>$30 - $60</td>
-                    <td>Introductory grooming services for puppies.</td>
+                  <td>Special-breed Cuts</td>
+                  <td>Varies</td>
+                  <td>Breed-specific cuts or styling (quoted after consultation).</td>
                 </tr>
                 <tr>
-                    <td>Senior Dog Package</td>
-                    <td>$40 - $80</td>
-                    <td>Grooming for older dogs, with special handling and care.</td>
+                  <td>Puppy Package</td>
+                  <td>$30 - $60</td>
+                  <td>Introductory grooming services for puppies.</td>
                 </tr>
                 <tr>
-                    <td>Full Grooming Package</td>
-                    <td>$60 - $120</td>
-                    <td>Comprehensive grooming: bath, haircut, teeth brushing, nail trim, ear cleaning.</td>
+                  <td>Senior Dog Package</td>
+                  <td>$40 - $80</td>
+                  <td>Grooming for older dogs, with special handling and care.</td>
                 </tr>
-            </tbody>
-        </table>
-    </section>
-</main>
-
-<footer>
-    <p>Opening Hours: Mon - Fri 9AM - 5PM</p>
-</footer>
-</body>
+                <tr>
+                  <td>Full Grooming Package</td>
+                  <td>$60 - $120</td>
+                  <td>Comprehensive grooming: bath, haircut, teeth brushing, nail trim, ear cleaning.</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Services table ends -->
+          </section>
+        </div>
+      </div>
+    </main>
+    <!-- Footer starts -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <p>Opening Hours: Mon - Fri 9AM - 5PM</p>
+    </footer>
+  </body>
 </html>
